@@ -126,7 +126,7 @@ export default function LoginPage() {
           </div>
         </form>
         <div className="flex items-center justify-center mt-4">
-          <p className="text-sm text-textPrimary mr-2">Don't have an account yet?</p>
+          <p className="text-sm text-textPrimary mr-2">Don&#39;t have an account yet?</p>
           <Link href="/Pages/UserAuthentication/Registration">
             <p className="text-sm text-textPrimary font-bold">Create Account</p>
           </Link>
