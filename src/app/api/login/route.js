@@ -4,14 +4,12 @@ import path from 'path';
 import fs from 'fs';
 import { generateToken } from '@/app/utils/jwt';
 
-// Define CORS headers
 const corsHeaders = {
-  'Access-Control-Allow-Origin': '*', // Replace this with your domain in production
+  'Access-Control-Allow-Origin': '*', 
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
-// Handle OPTIONS requests for preflight checks
 export async function OPTIONS() {
   return new NextResponse(null, {
     status: 204,
@@ -19,10 +17,8 @@ export async function OPTIONS() {
   });
 }
 
-// Handle POST requests for login
 export async function POST(req) {
   try {
-    // CORS preflight headers are already applied
     const { email, password } = await req.json();
     
     if (!email || !password) {
