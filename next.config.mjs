@@ -7,7 +7,16 @@ const nextConfig = {
   },
   crossOrigin: "anonymous",
   images: {
-    domains: ["localhost"],
+    remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: '**',
+        },
+        {
+          protocol: 'http',
+          hostname: '**',
+        },
+      ],
   },
 };
 
