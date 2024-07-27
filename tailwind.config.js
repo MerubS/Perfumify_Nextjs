@@ -14,7 +14,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ['serif', 'sans-serif'],
-        // Add more custom fonts here
       },
       colors: {
         primary: '#c1e1c1',    

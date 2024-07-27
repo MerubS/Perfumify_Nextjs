@@ -3,7 +3,7 @@ export default function HeaderImage() {
   return (
     <div className="relative w-full h-96">
       <Image
-        src="/images/sales1.jpeg"
+        src="/images/headerimage.avif"
         alt="Sales"
         layout="fill"
         objectFit="cover"
