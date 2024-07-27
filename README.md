@@ -1,6 +1,9 @@
+Files
+[productData.txt](https://github.com/user-attachments/files/16400776/productData.txt)
+
 Prequisite
 - Go to https://mocki.io/
-- Enter the JSON data provided below
+- Enter the JSON data provided above
 - Update the MOCKAPI received as stated below
 
 
