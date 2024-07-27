@@ -1,5 +1,6 @@
 import Image from "next/image";
 export default function Card({title , price , image}) {
+  console.log(image);
   return (
     <div className="max-w-sm rounded overflow-hidden border-2 border-primary bg-white shadow-lg">
         <div className="flex justify-center p-4">

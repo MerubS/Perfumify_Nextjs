@@ -4,8 +4,6 @@ import Link from "next/link";
 
 const ProductsPage = async () => {
   let products = [];
-  console.log("Process", process.env.NEXT_PUBLIC_API_URL);
-  
 
   try {
     const response = await fetch(process.env.NEXT_PUBLIC_API_URL); 

@@ -43,3 +43,4 @@ const QuantityUI = ({ product, initialQuantity = 1 }) => {
 };
 
 export default QuantityUI;
+ 
