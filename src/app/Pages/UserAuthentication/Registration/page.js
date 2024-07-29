@@ -67,14 +67,12 @@ export default function Registration() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(userCredentials);
     if (!validateForm()) {
       return; 
     }
 
     try {
       const res = await postToApi(API_ENDPOINTS.REGISTER , userCredentials);
-      console.log(res);
       if(res.message=="User added successfully") {
         localStorage.setItem('token', res.token);
         router.push('/Pages/ProductListing')
@@ -83,8 +81,6 @@ export default function Registration() {
     } catch (error) {
       console.log(error);
     }
-
-    console.log("User Credentials", userCredentials);
   };
 
   return (

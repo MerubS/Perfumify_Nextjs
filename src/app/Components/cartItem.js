@@ -16,12 +16,14 @@ const CartItem = ({ product, onRemove }) => {
         <p className="text-sm text-textPrimary">Price: ${product.price}</p>
         <p className="text-sm text-textPrimary">Quantity: {product.quantity}</p>
       </div>
+      { onRemove &&
       <button
         onClick={() => onRemove(product.id)}
         className="absolute top-2 right-2 bg-red-500 text-white font-bold text-xl w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
       >
         &times;
       </button>
+}
     </div>
   );
 };

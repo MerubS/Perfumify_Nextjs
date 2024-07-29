@@ -5,7 +5,6 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [authState, setAuthState] = useState('');
-  console.log("auth" , authState);
 
   useEffect(() => {
     const token = localStorage.getItem('token');

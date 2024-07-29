@@ -6,8 +6,6 @@ if (!BASE_URL) {
 
 export const fetchFromApi = async (endpoint, options = {}) => {
   const url = `${BASE_URL}${endpoint}`;
-  console.log(url);
-  
   try {
     const response = await fetch(url, options);
 

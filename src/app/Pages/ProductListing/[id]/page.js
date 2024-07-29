@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import QuantityUI from '@/app/Components/quantity'; // Adjust the import path as needed
+import QuantityUI from '@/app/Components/quantity';
 import { notFound } from 'next/navigation';
 
-// Fetch product data for a specific ID
 async function fetchProduct(id) {
   const response = await fetch(process.env.NEXT_PUBLIC_API_URL);
   if (!response.ok) {
